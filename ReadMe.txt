@@ -12,9 +12,9 @@ How to run the code:
 
 2. Generate the preprocessed fMRI .mat data using the 'make_fmri_mat_visRecon.m' script from the above-mentioned link
 
-3. Move the preprocessed fMRI data 's1_fmri_roi-1to2mm_Th1_fromAna_s1071119ROI_resol10_v6.mat' to the current path
+3. Move the preprocessed fMRI data 's1_fmri_roi-1to2mm_Th1_fromAna_s1071119ROI_resol10_v6.mat' to the 'fMRI-BasedVisualReconstruction' path
 
-4. Run the 'MainVisualRecons.m' script which completes the training and evaluation of visual stimulus reconstruction
+4. Run the 'MainVisualRecons.m' script in the 'fMRI-BasedVisualReconstruction' path which completes the training and evaluation of visual stimulus reconstruction
 
 ===================================================
 ===================ECoG decoding===================
@@ -28,7 +28,7 @@ How to run the code:
 
 1. Download the ECoG dataset from http://www.www.neurotycho.org/epidural-ecog-food-tracking-task
 
-2. Move the downloaded dataset to the 'data' folder as follows:
+2. Move the downloaded dataset to the '/ECoG-BasedMovementReconstruction/data' folder as follows:
 
 data/
 ├── MonkeyB/
@@ -66,6 +66,6 @@ data/
 │   ├── ...
 │   └── 20091110S2_Epidural-ECoG+Food-Tracking_C_Kentaro+Shimoda_mat_ECoG64-Motion6/
 
-3. Generate the wavelet features from preprocessed ECoG data by running the 'MainPreprocess.m' script in the 'preprocess' folder
+3. Generate the wavelet features from preprocessed ECoG data by running the 'MainPreprocess.m' script in the 'ECoG-BasedMovementReconstruction/preprocess' folder
 
-4. Run the 'MainDecoding.m' script in the 'decoding' folder which completes the training and evaluation of movement trajectory reconstruction
+4. Run the 'MainDecoding.m' script in the 'ECoG-BasedMovementReconstruction/decoding' folder which completes the training and evaluation of movement trajectory reconstruction
